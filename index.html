@@ -3,154 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <!-- Link to your CSS file -->
+    <title>[Your Name] - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Link to an icon library (BoxIcons) -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-    <!-- HEADER & NAVIGATION -->
-    <header class="header">
-        <a href="#" class="logo">MyPortfolio.</a>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">[Your Name]</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- HOME/HERO SECTION -->
-        <section class="home" id="home">
-            <div class="home-content">
-                <h3>Hello, I am</h3>
-                <h1>Your Name</h1>
-                <h3>And I'm a <span class="multiple-text"></span></h3>
-                <p>I build things for the web. I'm a software developer based in City, specializing in building (and occasionally designing) exceptional digital experiences.</p>
-                <div class="social-media">
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-twitter'></i></a>
-                </div>
-                <a href="#" class="btn">Download CV</a>
-            </div>
-            <div class="home-img">
-                <img src="https://placehold.co/400x400/252525/FFFFFF?text=Your\nImage" alt="Your Name">
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section class="about" id="about">
-            <div class="about-img">
-                <img src="https://placehold.co/400x400/252525/FFFFFF?text=Your\nImage" alt="Your Name">
-            </div>
+        <!-- About Me Section -->
+        <section id="about" class="container">
+            <h2>About Me</h2>
             <div class="about-content">
-                <h2 class="section-title">About <span>Me</span></h2>
-                <h3>Frontend Developer</h3>
-                <p>Here you can write a paragraph about yourself. Talk about your passion for technology, your journey into web development, and what motivates you. Keep it professional but personal!</p>
-                <a href="#" class="btn">Read More</a>
+                <img src="https://placehold.co/150x150/007BFF/FFFFFF?text=You" alt="Your Photo" class="profile-photo">
+                <p>
+                    Hello! I'm a first-year student in the <strong>Information Systems Science and Engineering (ISSE)</strong> course at <strong>Ritsumeikan University</strong>. 
+                    Before starting my university journey, I worked professionally as a <strong>Game Developer for three years</strong>. I'm passionate about building interactive and engaging digital experiences, and I'm excited to combine my practical experience with my academic studies.
+                </p>
             </div>
         </section>
 
-        <!-- SERVICES SECTION -->
-        <section class="services" id="services">
-            <h2 class="section-title">My <span>Services</span></h2>
-            <div class="services-container">
-                <div class="service-box">
-                    <i class='bx bx-code-alt'></i>
-                    <h3>Web Development</h3>
-                    <p>Creating responsive and dynamic websites using the latest technologies. From static pages to complex web applications.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-                <div class="service-box">
-                    <i class='bx bxs-paint'></i>
-                    <h3>UI/UX Design</h3>
-                    <p>Designing user-friendly interfaces that are both beautiful and functional. Focusing on user experience and accessibility.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-                <div class="service-box">
-                    <i class='bx bx-bar-chart-alt'></i>
-                    <h3>App Development</h3>
-                    <p>Building mobile applications for iOS and Android. Let's turn your idea into a reality on the app stores.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
+        <!-- Experience Section -->
+        <section id="experience" class="container">
+            <h2>Professional Experience</h2>
+            <div class="job">
+                <h3>Game Developer at [Company A]</h3>
+                <p class="job-duration">[Year] - [Year]</p>
+                <ul>
+                    <li>Developed key gameplay features for a new mobile title.</li>
+                    <li>Worked with artists and designers to implement game assets.</li>
+                    <li>Fixed bugs and optimized performance.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Junior Programmer at [Company B]</h3>
+                <p class="job-duration">[Year] - [Year]</p>
+                <ul>
+                    <li>Assisted the senior development team on a major PC game project.</li>
+                    <li>Wrote and maintained code for user interfaces and game logic.</li>
+                    <li>Participated in daily team meetings and code reviews.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Intern Developer at [Company C]</h3>
+                <p class="job-duration">[Year] - [Year]</p>
+                <ul>
+                    <li>Learned the basics of the game development pipeline.</li>
+                    <li>Helped create and test simple game mechanics.</li>
+                    <li>Provided support to the quality assurance (QA) team.</li>
+                </ul>
             </div>
         </section>
 
-        <!-- PORTFOLIO SECTION -->
-        <section class="portfolio" id="portfolio">
-            <h2 class="section-title">Latest <span>Projects</span></h2>
-            <div class="portfolio-container">
-                <div class="portfolio-box">
-                    <img src="https://placehold.co/600x400/00bfff/FFFFFF?text=Project+1" alt="Project 1">
-                    <div class="portfolio-layer">
-                        <h4>Web Design</h4>
-                        <p>A cool project I built for a client.</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="https://placehold.co/600x400/00bfff/FFFFFF?text=Project+2" alt="Project 2">
-                     <div class="portfolio-layer">
-                        <h4>App Interface</h4>
-                        <p>A cool project I built for a client.</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-                <div class="portfolio-box">
-                    <img src="https://placehold.co/600x400/00bfff/FFFFFF?text=Project+3" alt="Project 3">
-                     <div class="portfolio-layer">
-                        <h4>Branding</h4>
-                        <p>A cool project I built for a client.</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-                 <div class="portfolio-box">
-                    <img src="https://placehold.co/600x400/00bfff/FFFFFF?text=Project+4" alt="Project 4">
-                     <div class="portfolio-layer">
-                        <h4>Web App</h4>
-                        <p>A cool project I built for a client.</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to connecting with new people. Feel free to reach out!</p>
+            <div class="social-links">
+                <a href="[Your LinkedIn URL]" class="btn" target="_blank">LinkedIn</a>
+                <a href="[Your Instagram URL]" class="btn" target="_blank">Instagram</a>
             </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section class="contact" id="contact">
-            <h2 class="section-title">Contact <span>Me!</span></h2>
-            <form action="#">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email Address">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
-                </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </form>
         </section>
     </main>
-    
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Your Name | All Rights Reserved.</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Link to Typed.js for the typing effect -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- Link to your JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
